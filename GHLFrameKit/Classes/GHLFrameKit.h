@@ -8,5 +8,7 @@
 #ifndef GHLFrameKit_h
 #define GHLFrameKit_h
 
+#import "UIView+GHLFrame.h"
+#import "CALayer+GHLFrame.h"
 
 #endif /* GHLFrameKit_h */

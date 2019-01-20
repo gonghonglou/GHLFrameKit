@@ -1,15 +1,14 @@
 //
-//  CALayer+GHLFrame.m
+//  UIView+GHLFrame.m
 //  GHLFrameKit
 //
 //  Created by 与佳期 on 2019/1/20.
 //
 
-#import "CALayer+GHLFrame.h"
+#import "UIView+GHLFrame.h"
 
-@implementation CALayer (GHLFrame)
+@implementation UIView (GHLFrame)
 
-// copy from UIView+GHLFrame.m
 // x
 - (CGFloat)x {
     return self.frame.origin.x;
@@ -114,6 +113,12 @@
     return self.x + self.width/2;
 }
 
+
+/**
+ 设置 centerX 之前需要设置 width 值，否则
+
+ @param centerX centerX 值
+ */
 - (void)setCenterX:(CGFloat)centerX {
     if (self.width > 0) {
         self.x = centerX - self.width/2;

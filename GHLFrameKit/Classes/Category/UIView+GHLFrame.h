@@ -1,17 +1,16 @@
 //
-//  CALayer+GHLFrame.h
+//  UIView+GHLFrame.h
 //  GHLFrameKit
 //
 //  Created by 与佳期 on 2019/1/20.
 //
 
-#import <QuartzCore/QuartzCore.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CALayer (GHLFrame)
+@interface UIView (GHLFrame)
 
-// copy from UIView+GHLFrame.h
 @property (nonatomic, assign) CGFloat x;
 
 @property (nonatomic, assign) CGFloat y;

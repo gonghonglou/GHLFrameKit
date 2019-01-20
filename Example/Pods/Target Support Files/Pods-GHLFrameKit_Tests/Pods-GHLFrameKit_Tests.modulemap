@@ -1,0 +1,6 @@
+framework module Pods_GHLFrameKit_Tests {
+  umbrella header "Pods-GHLFrameKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
