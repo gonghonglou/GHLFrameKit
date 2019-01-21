@@ -10,6 +10,7 @@
 @implementation CALayer (GHLFrame)
 
 // copy from UIView+GHLFrame.m
+
 // x
 - (CGFloat)x {
     return self.frame.origin.x;
@@ -79,6 +80,7 @@
     return self.x + self.width;
 }
 
+// set right 之前需要先设置 width 值，否则布局可能出现问题
 - (void)setRight:(CGFloat)right {
     if (self.width > 0) {
         self.x = right - self.width;
@@ -101,6 +103,7 @@
     return self.y + self.height;
 }
 
+// set bottom 之前需要先设置 height 值，否则布局可能出现问题
 - (void)setBottom:(CGFloat)bottom {
     if (self.height > 0) {
         self.y = bottom - self.height;
@@ -114,6 +117,8 @@
     return self.x + self.width/2;
 }
 
+
+// set centerX 之前需要先设置 width 值，否则布局可能出现问题
 - (void)setCenterX:(CGFloat)centerX {
     if (self.width > 0) {
         self.x = centerX - self.width/2;
@@ -127,6 +132,7 @@
     return self.y + self.height/2;
 }
 
+// set centerY 之前需要先设置 height 值，否则布局可能出现问题
 - (void)setCenterY:(CGFloat)centerY {
     if (self.height > 0) {
         self.y = centerY - self.height/2;
@@ -140,6 +146,7 @@
     return CGPointMake(self.centerX, self.centerY);
 }
 
+// set center 之前需要先设置 width 和 height 值，否则布局可能出现问题
 - (void)setCenter:(CGPoint)center {
     self.centerX = center.x;
     self.centerY = center.y;

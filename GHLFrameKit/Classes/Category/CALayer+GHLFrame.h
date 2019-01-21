@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CALayer (GHLFrame)
 
 // copy from UIView+GHLFrame.h
+
 @property (nonatomic, assign) CGFloat x;
 
 @property (nonatomic, assign) CGFloat y;
@@ -24,16 +25,31 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) CGFloat left;
 
+/**
+ set right 之前需要先设置 width 值
+ */
 @property (nonatomic, assign) CGFloat right;
 
 @property (nonatomic, assign) CGFloat top;
 
+/**
+ set bottom 之前需要先设置 height 值
+ */
 @property (nonatomic, assign) CGFloat bottom;
 
+/**
+ set centerX 之前需要先设置 width 值
+ */
 @property (nonatomic, assign) CGFloat centerX;
 
+/**
+ set centerY 之前需要先设置 height 值
+ */
 @property (nonatomic, assign) CGFloat centerY;
 
+/**
+ set center 之前需要先设置 width 和 height 值
+ */
 @property (nonatomic, assign) CGPoint center;
 
 @end
