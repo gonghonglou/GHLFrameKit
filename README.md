@@ -11,7 +11,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-The source code is simple, but you only should pay attention to the order in which these setter: right、bottom、centerX、centerY、center.
+The source code is simple, all getters are safe, but you only should pay attention to the order in which these setter: `right`, `bottom`, `centerX`, `centerY`, `center`.
+
+Maybe you should set `width` before `right`, `centerX` or `center`, set `height` before `bottom`, `centerY` or `center`.
 
 ## Installation
 
