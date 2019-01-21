@@ -40,6 +40,7 @@ layer.backgroundColor = [UIColor blueColor].CGColor;
 [self.view.layer addSublayer:layer];
 ```
 
+![Screen Shot](https://raw.githubusercontent.com/gonghonglou/GHLFrameKit/master/Example/Screen%20Shot.png)
 
 ## Installation
 
